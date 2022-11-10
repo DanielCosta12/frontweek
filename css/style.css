@@ -50,7 +50,7 @@ i {
 
 #navbar {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   text-transform: uppercase;
   margin-right: 2rem;
 }
@@ -71,7 +71,34 @@ i {
 .banner h2 {
   font-size: 4rem;
   margin-bottom: 1.2rem;
+  position: relative;
+  z-index: 2;
 }
 .banner p {
   font-size: 1.5rem;
+}
+#square {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: var(--main-color);
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 40px;
+}
+.dots {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary-color);
+}
+.dot.active {
+  background-color: var(--main-color);
 }
